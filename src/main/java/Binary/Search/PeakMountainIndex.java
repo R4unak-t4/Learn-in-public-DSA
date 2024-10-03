@@ -1,5 +1,6 @@
 package Binary.Search;
 //Question Link : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
+//This code is written in jetbrains IDE
 public class PeakMountainIndex {
     public static void main(String[] args) {
         int [] arr = {0,10,5,2};

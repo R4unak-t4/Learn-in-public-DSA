@@ -1,4 +1,4 @@
-package org.example;
+package Binary.Search;
 //Question Link : https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
 public class PeakMountainIndex {
     public static void main(String[] args) {

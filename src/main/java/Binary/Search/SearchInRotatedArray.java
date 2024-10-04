@@ -46,10 +46,12 @@ public class SearchInRotatedArray {
             if (nums[m] > nums[m+1] && m <e){
                 pivot = m;
                 return pivot;
-            }else if (nums[m] < nums[m-1]){
+            }if (nums[m] < nums[m-1]){
                return m-1;
-            }else if (nums[m] <= nums[s]){
+            }if (nums[m] <= nums[s]){
                 e = m-1;
+            }else {
+                s = m+1;
             }
         }
         return pivot;

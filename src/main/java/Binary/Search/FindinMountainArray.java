@@ -15,7 +15,6 @@ public class FindinMountainArray {
             findans(arr,peak,arr.length -1,target);
         return firsttry;
 
-
     }
     static int findans(int arr[],int s,int e,int target) {
         int m, ans = -1;

@@ -2,7 +2,7 @@ package Binary.Search;
 //Question link : https://leetcode.com/problems/find-in-mountain-array/description/
 public class FindinMountainArray {
     public static void main(String[] args) {
-    int [] arr = {1,2,3,4,5,3,1};
+    int [] arr = {1,2,4,5,3,1};
     int target = 3;
         System.out.println(search(arr,target));
     }
@@ -11,9 +11,8 @@ public class FindinMountainArray {
         int firsttry = findans(arr,0,peak,target);
         if (firsttry != -1){
             return firsttry;
-        } else {
-            findans(arr,peak,arr.length -1,target);
         }
+            findans(arr,peak,arr.length -1,target);
         return firsttry;
 
     }

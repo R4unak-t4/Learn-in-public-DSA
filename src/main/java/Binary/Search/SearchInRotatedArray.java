@@ -3,7 +3,7 @@ package Binary.Search;
 //Question Link : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 public class SearchInRotatedArray {
     public static void main(String[] args) {
-    int [] nums = {4,5,6,7,0,1,2};
+    int [] nums = {1};
     int target = 0;
         System.out.println(search(nums,target));
     }
@@ -43,7 +43,7 @@ public class SearchInRotatedArray {
         int m, pivot = -1;
         while (s <= e){
             m = s+(e-s)/2;
-            if (nums[m] > nums[m+1] && m <e){
+            if ( m <e && nums[m] > nums[m+1] ){
                 pivot = m;
                 return pivot;
             }if (nums[m] < nums[m-1]){

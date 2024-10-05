@@ -3,8 +3,8 @@ package Binary.Search;
 //Question Link : https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 public class SearchInRotatedArray {
     public static void main(String[] args) {
-    int [] nums = {1};
-    int target = 0;
+    int [] nums = {1,3};
+    int target = 1;
         System.out.println(search(nums,target));
     }
     static int search(int [] nums, int target){
@@ -12,7 +12,7 @@ public class SearchInRotatedArray {
         if (pivot == -1){
             return pivot;
         }
-        if (pivot == target){
+        if (nums[pivot] == target){
             return pivot;
         }else if(nums[0] > target){
             return BinarySearch(nums,pivot+1,nums.length-1,target);
@@ -46,7 +46,7 @@ public class SearchInRotatedArray {
             if ( m <e && nums[m] > nums[m+1] ){
                 pivot = m;
                 return pivot;
-            }if (nums[m] < nums[m-1]){
+            }if (m > s && nums[m] < nums[m-1]){
                return m-1;
             }if (nums[m] <= nums[s]){
                 e = m-1;

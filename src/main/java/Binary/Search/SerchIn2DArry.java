@@ -22,6 +22,12 @@ public class SerchIn2DArry {
         while (rs<=re){
             int rm = rs + (re - rs)/2;
             int ce = arr[rm].length-1;
+            if (arr[0][ce] > target){
+                ce = ce-1;
+            }
+            if (arr[rm][0] < target){
+                rs = rm +1;
+            }
             if (arr[rm][ce] == target){
                 ans = new int[]{rm, ce};
                 return  ans;
@@ -44,7 +50,6 @@ public class SerchIn2DArry {
                         e = m-1;
                     }
                 }
-                rs =
             }
 
 

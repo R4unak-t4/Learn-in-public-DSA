@@ -3,7 +3,7 @@ package Binary.Search;
 public class InsertPos {
     public static void main(String[] args) {
         int [] nums = {1,3,5,6};
-        int target = 2;
+        int target = 0;
         System.out.println(BinarySearch(nums,target));
     }
     static int BinarySearch(int [] nums,int target){

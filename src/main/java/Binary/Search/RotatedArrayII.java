@@ -45,6 +45,6 @@ public class RotatedArrayII {
             }
         }
 
-        return false;  // target is not found
+        return false;
     }
 }

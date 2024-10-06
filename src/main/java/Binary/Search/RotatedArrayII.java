@@ -6,7 +6,7 @@ public class RotatedArrayII {
     public static void main(String[] args) {
         int[] nums = {1};
         int target = 0;
-        System.out.println(Answer(nums, target));  // Output: false
+        System.out.println(Answer(nums, target));
     }
 
     static boolean Answer(int[] nums, int target) {
@@ -24,8 +24,8 @@ public class RotatedArrayII {
 
             // If we can't determine which side is sorted (due to duplicates)
             if (nums[s] == nums[m] && nums[m] == nums[e]) {
-                s++;  // just increment the left pointer
-                e--;  // just decrement the right pointer
+                s++;
+                e--;
             }
             // Left part is sorted
             else if (nums[s] <= nums[m]) {

@@ -1,7 +1,6 @@
 package Linear.Search;
 
 import java.util.Arrays;
-
 //Question: https://leetcode.com/problems/merge-sorted-array/description/
 public class MergeSort {
     public static void main(String[] args) {

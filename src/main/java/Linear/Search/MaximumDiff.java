@@ -1,6 +1,6 @@
 package Linear.Search;
 
-import java.lang.reflect.Array;
+//Question link : https://leetcode.com/problems/maximum-gap/submissions/1415930702/
 import java.util.Arrays;
 
 public class MaximumDiff {
@@ -9,7 +9,7 @@ public class MaximumDiff {
         System.out.println(Maxgap(nums));
     }
     static int Maxgap(int[] nums){
-        if (nums.length-1<2){
+        if (nums.length<2){
             return 0;
         }
         Arrays.sort(nums);

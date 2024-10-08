@@ -9,7 +9,9 @@ public class MaximumDiff {
         System.out.println(Maxgap(nums));
     }
     static int Maxgap(int[] nums){
-
+        if (nums.length-1<2){
+            return 0;
+        }
         Arrays.sort(nums);
         int ans = -1, i = nums.length-2;
         while (i>=0){

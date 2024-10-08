@@ -6,7 +6,7 @@ public class SerchIn2DArray {
         int [][] matrix = {{1,3,5,7},
                 {10,11,16,20},
                 {23,30,34,60}};
-        int target = 3;
+        int target = 11;
         System.out.println(BinarySearch(matrix,target));
     }
     static Boolean BinarySearch(int [][] matrix, int target){

@@ -30,6 +30,6 @@ public class MergeSort {
             j--;
             k--;
         }
-        return nums1;
+        return nums1; // Remove This line ehwn submitting in Leet code
     }
 }

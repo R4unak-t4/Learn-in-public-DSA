@@ -1,7 +1,7 @@
 package Selection.Sort;
 
 import java.util.Arrays;
-
+//Please use merge sort for this as the conditions are updated
 //Question link : https://leetcode.com/problems/sort-an-array/description/
 public class Questionone {
     public static void main(String[] args) {

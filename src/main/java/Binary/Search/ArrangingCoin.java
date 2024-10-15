@@ -5,12 +5,12 @@ public class ArrangingCoin {
 
     }
     static int BinarySearch(int n){
-        int s = 1, e = n;
+        long s = 1, e = n;
         while (s<=e){
-            int m = s+(e-s)/2;
-            long req = (long)(m*(m+1))/2;
+            long m = s+(e-s)/2;
+            long req = (m*(m+1))/2;
             if (req == n){
-                return m;
+                return (int)m;
             }
             else if (n<req){
                 e = m-1;
@@ -18,6 +18,6 @@ public class ArrangingCoin {
                 s = m+1;
             }
         }
-        return e;
+        return (int)e;
     }
 }

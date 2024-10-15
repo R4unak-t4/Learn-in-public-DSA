@@ -4,4 +4,8 @@ public class ArrangingCoin {
     public static void main(String[] args) {
 
     }
+    static int BinarySearch(int n){
+
+
+    }
 }

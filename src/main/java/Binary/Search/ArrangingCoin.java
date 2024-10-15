@@ -13,9 +13,9 @@ public class ArrangingCoin {
                 return m;
             }
             else if (n<req){
-                e--;
+                e = m-1;
             }else {
-                s++;
+                s = m+1;
             }
         }
         return s;

@@ -8,7 +8,7 @@ public class ArrangingCoin {
         int s = 1, e = n;
         while (s<=e){
             int m = s+(e-s)/2;
-            int req = (m*(m+1))/2;
+            long req = (long)(m*(m+1))/2;
             if (req == n){
                 return m;
             }

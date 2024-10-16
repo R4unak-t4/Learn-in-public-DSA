@@ -1,5 +1,5 @@
 package Cycle.Sort;
-//Questiom : https://leetcode.com/problems/find-the-duplicate-number/description/
+//Question : https://leetcode.com/problems/find-the-duplicate-number/description/
 public class FindDups {
     public static void main(String[] args) {
         int [] arr = {1,3,4,2,2};

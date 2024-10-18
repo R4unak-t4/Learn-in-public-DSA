@@ -33,7 +33,7 @@ public class MergeIntervals {
             }
         }
 
-        // Return the merged intervals up to index k.
+
         return Arrays.copyOfRange(intervals, 0, k + 1);
     }
 }

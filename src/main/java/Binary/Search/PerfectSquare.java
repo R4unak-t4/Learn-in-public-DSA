@@ -11,7 +11,7 @@ public class PerfectSquare {
             long sqr = (long) m*m;
             if (sqr == num){
                 return true;
-            } else if (m*m > num) {
+            } else if (sqr > num) {
                 e = m-1;
 
             }else {

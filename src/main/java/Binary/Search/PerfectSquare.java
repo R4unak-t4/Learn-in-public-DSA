@@ -8,7 +8,8 @@ public class PerfectSquare {
         int s = 1, e = num;
         while (s<= e){
             int m = s+(e-s)/2;
-            if (m*m == num){
+            long sqr = (long) m*m;
+            if (sqr == num){
                 return true;
             } else if (m*m > num) {
                 e = m-1;

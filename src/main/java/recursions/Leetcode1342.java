@@ -5,7 +5,14 @@ public class Leetcode1342 {
         System.out.println(solution(14));
     }
     static int solution(int num){
-
+    if (num == 0){
+        return 0;
+    }
+    if (num%2 == 0){
+        return 1 + solution(num/2);
+    }else {
+        return 1+ solution(num-1);
+    }
     }
 }
 

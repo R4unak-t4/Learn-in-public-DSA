@@ -3,20 +3,14 @@ package recursions;
 public class SortedArray {
     public static void main(String[] args) {
         int [] arr = {1,2,4,5};
-        int ans = solution(arr,0);
-        if (ans != 0){
-            System.out.println("Array is not sorted");
-        }else {
-            System.out.println("Array is sorted");
-        }
+        solution(arr,0);
+
     }
-    static int solution(int [] arr, int index){
+    static boolean solution(int [] arr, int index){
         if (index == arr.length-1 ){
-            return 0;
+            return true;
         }
-        if (index< arr.length && arr[index] >= arr[index+1]){
-            return 1;
-        }
+        if (index < arr.length )
         return solution(arr,index+1);
 
 

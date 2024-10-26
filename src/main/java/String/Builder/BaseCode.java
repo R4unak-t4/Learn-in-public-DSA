@@ -5,6 +5,9 @@ package String.Builder;
 //If you require Hand written notes for String Builder You can message me at linkedin or find the link to the drive in future
 public class BaseCode {
     public static void main(String[] args) {
-
+        StringBuilder builder = new StringBuilder(); //To access String Builder method
+        String name = "Raunak";
+        builder.append(name);
+        System.out.println(builder);
     }
 }

@@ -9,7 +9,7 @@ public class IterativeSubseq {
         int[] arr = {1, 2, 3};
         List<int[]> subsequences = subseq(arr);
 
-        // Print each subsequence
+
         for (int[] seq : subsequences) {
             System.out.println(Arrays.toString(seq));
         }
